@@ -61,3 +61,20 @@
   padding-bottom: 3rem;
   color: grey;
 }
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.div-info {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.div-info label {
+  padding: 20px;
+  font-size: 2rem;
+}
