@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="Order-Summary">
-      <h1 class="Summary">Order Summary</h2>
+      <h1 class="summary">Order Summary</h2>
         <div class="total">
       <p>total</p>
       <p class="endofpage">$333 / month</p>
@@ -19,7 +19,7 @@
     </header>
 
     <section>
-      <h1 class="HeadPeyment">Peyment Metod</h1>
+      <h1 class="headPeyment">Peyment Metod</h1>
       <div class="Peyment">
         <div class="type" >
           <img class="image" src="./Images/cards.png">
@@ -33,26 +33,36 @@
     </section>
 
     <section class="">
-    <h1 class="Card">Card Info</h1>
-    <form class="Card">
-      <div class="div-info">
-        <label for="number">Card Number</label>
-        <input name="number" placeholder="1234 1234 1234" >
-      </div>
+      <h1 class="Card">Card Info</h1>
+      <form class="Card">
 
-      <div class="div-info">
-        <label for="Date">Expiry Date</label>
-        <input name="Date" placeholder="MM/YY" >
-      </div>
+        <div class="div-info">
+          <label for="number">Card Number</label>
+          <input type="number" name="number" placeholder="1234 1234 1234" >
+        </div>
 
-      <div class="div-info">
-        <label for="Code">Security Code</label>
-        <input name="Code" placeholder="CVV" >
-      </div>
-      <button></button>
+        <div class="div-info">
+          <label for="Date">Expiry Date</label>
+          <input type="date" name="Date" placeholder="MM/YY" >
+        </div>
 
-  </form>
+        <div class="div-info">
+          <label for="Code">Security Code</label>
+          <input type="number" name="Code" placeholder="CVV" >
+        </div>
+      
+      </form>
 
     </section>
+
+
+    <div class="btn-1">
+      <button type="submit" class="buy">Buy Now</button>
+    </div>
+
+    <div class="btn-1">
+      <a class="help-link" href="https://www.w3schools.com">Need Help?</a>
+    </div>
+
   </body>
 </html>

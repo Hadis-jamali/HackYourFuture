@@ -12,7 +12,7 @@
   font-family: sans-serif;
 }
 
-.Summary {
+.summary {
   padding: 1rem;
 }
 .total {
@@ -25,7 +25,7 @@
 .endofpage {
 }
 
-.HeadPeyment {
+.headPeyment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +77,31 @@
 .div-info label {
   padding: 20px;
   font-size: 2rem;
+}
+.div-info input {
+  padding: 10px;
+}
+
+.btn-1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.buy {
+  background: linear-gradient(to right, rgb(216, 115, 33), rgb(180, 44, 180));
+  width: 300px;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: aliceblue;
+}
+.help-link {
+  background-image: linear-gradient(to right, rgb(216, 115, 33), rgb(180, 44, 180));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  text-decoration: none;
 }
