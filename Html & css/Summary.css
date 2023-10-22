@@ -4,8 +4,6 @@
 }
 
 .Order-Summary {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(to right, rgb(216, 115, 33), rgb(180, 44, 180));
   color: aliceblue;
   padding: 20px;
@@ -16,6 +14,8 @@
   padding: 1rem;
 }
 .total {
+  display: flex;
+  justify-content: space-between;
   font-size: 25px;
   padding: 1rem;
 }
@@ -23,6 +23,7 @@
   font-weight: bold;
 }
 .endofpage {
+  flex-direction: row;
 }
 
 .headPeyment {
@@ -105,3 +106,27 @@
   font-size: 2rem;
   text-decoration: none;
 }
+/* @media only screen and (min-width: 768px) {
+  .Order-Summary {
+    /* margin: 0 0 20px 20px; */
+    /* width: 80%;
+  }
+  .peyment-media {
+    width: 80%;
+  }
+  .card-media {
+    width: 80%;
+  }
+} */
+/* @media only screen and (max-width: 768px) {
+  .Order-Summary {
+    /* margin: 0 0 20px 20px */
+    /* width: 40%;
+  }
+  .peyment-media {
+    width: 40%;
+  }
+  .card-media {
+    width: 40%;
+  } */
+/* } */
