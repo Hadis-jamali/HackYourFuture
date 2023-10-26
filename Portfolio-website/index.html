@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Hadis</title>
+    <title>Hadis Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
 
@@ -11,7 +11,7 @@
     <header id="section1" class="container">
       <div class="navbar-container">
         <div class="main-navbar">
-          <h2 class="logo">Portfolio</h2>
+          <h2 class="logo">Hadis</h2>
           <nav class="navbar">
             <ul class="nav-list">
               <li class="nav-hover">
@@ -26,6 +26,9 @@
               <li class="nav-hover">
                 <a href="#section4" class="nav-link"> Blog </a>
               </li>
+              <li class="nav-hover">
+                <a href="#section5" class="nav-link"> Contact </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -38,6 +41,9 @@
       <h2 class="title">About Me</h2>
       <div class="about">
         <div class="about-me">
+          <img class="about-img" src="./images/hadis.jpg" alt="hadis jamali" />
+        </div>
+        <div class="about-me">
           <p class="info">
             I'm Hadis. I'm from Iran and live in Denmark,Aarhus.I'm Passionate Junior Frontend
             Developer with expertise in HTML, CSS, JavaScript and ongoing learning in React JS.
@@ -47,13 +53,10 @@
             <span class="span-font">My skills: React, Javascript, Html, Css</span>
           </p>
         </div>
-        <div class="about-me">
-          <img class="about-img" src="./images/hadis.jpg" alt="hadis jamali" />
-        </div>
       </div>
     </section>
 
-    <section id="section3" class="project">
+    <section id="section3" class="pro">
       <h2 class="head-project">Projects</h2>
       <div class="card-project">
         <div class="cards">
@@ -81,7 +84,7 @@
       <div class="card-project">
         <div class="cards">
           <img class="img-project" src="./images/code4.png" />
-          <p class="title-project">Caospilot-toolbox</p>
+          <p class="title-project">Kaospilot-toolbox</p>
           <a href="https://github.com/Hadis-jamali/Kaospilot-toolbox">
             <button class="btn-project">Click here</button>
           </a>
@@ -105,6 +108,25 @@
         <a href="https://www.linkedin.com/in/hadisjamali/">
           <button class="btn-cv">Download CV</button>
         </a>
+      </div>
+    </section>
+
+    <section id="section5">
+      <div class="contact-me">
+        <h1 class="text-contact">Contact Me</h1>
+        <div class="contact">
+          <form class="contact-form">
+            <input type="text" class="input-form" placeholder=" Name" />
+            <input type="email" class="input-form" placeholder=" Email" />
+            <input type="text" class="input-form" placeholder=" Subject" />
+            <div class="form-contact">
+              <textarea rows="5" id="comment" name="text" placeholder=" Message"></textarea>
+            </div>
+            <div class="btn-contact">
+              <button type="submit" class="btn-contactme">Contact Me</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

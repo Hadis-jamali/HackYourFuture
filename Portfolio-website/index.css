@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -8,7 +7,7 @@ html {
 }
 body {
   background: #f5f5f5;
-  background-color: rgb(141, 133, 133);
+  background-color: rgb(219, 210, 210);
 }
 .container {
   height: 100vh;
@@ -51,11 +50,15 @@ body {
 }
 
 .name-title {
+  display: flex;
+  margin-left: 5rem;
   font-size: 3rem;
   padding-top: 350px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .name-desc {
+  display: flex;
+  margin-left: 5rem;
   font-size: 20px;
   padding-top: 15px;
   font-weight: bold;
@@ -77,10 +80,13 @@ body {
   align-items: center;
   padding: 1rem;
   margin: 2rem;
-  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; */
-  box-shadow: 0 0 40px 0 rgba(255, 253, 253, 0.993);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border-radius: 10px;
 }
+/* .about-me:hover{
+  border: 5px solid white;
+
+} */
 .title {
   display: flex;
   justify-content: center;
@@ -122,11 +128,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgb(228, 215, 215);
-  border-radius: 1rem;
+  border-radius: 10px;
   margin: 1rem;
-  background-color: rgb(235, 226, 226);
+  background-color: rgba(255, 255, 255, 0.979);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards:hover {
+  border: 2px solid rgb(14, 12, 12);
 }
 .img-project {
   width: 400px;
@@ -151,6 +159,7 @@ body {
 .btn-project:hover {
   background-color: lightsalmon;
   color: black;
+  cursor: pointer;
 }
 .div-cv {
   display: flex;
@@ -171,6 +180,64 @@ body {
   background-color: lightsalmon;
   color: black;
 }
+/* contact me */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.contact-form {
+  width: 300px;
+  margin: 1rem;
+}
+.input-form {
+  width: 100%;
+  margin: 10px;
+  height: 30px;
+  border: 0;
+  border-radius: 3px;
+}
+.form-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+#comment {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+}
+.btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-contactme {
+  margin: 1rem;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(80, 80, 80);
+  color: #f5f5f5;
+  font-size: 15px;
+}
+.btn-contactme:hover {
+  background-color: lightsalmon;
+  color: black;
+}
+
+/* footer */
 .footer {
   margin-top: 3rem;
   text-align: center;
