@@ -18,6 +18,11 @@
 // console.log(result) ;
 
 // reduce
-const numbers = [1, 2, 3, 4];
-const result= number.reduce((acc,cur)=>{acc+cur} , 0);
-console.log(result);
+// const numbers = [1, 2, 3, 4];
+// const result= number.reduce((acc,cur)=>{acc+cur} , 0);
+// console.log(result);
+
+//every-some
+const number = [1, "2", 3, 4];
+const isTrue = number.every((item) => typeof item === "number");
+console.log(isTrue);
