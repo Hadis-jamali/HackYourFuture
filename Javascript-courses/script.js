@@ -23,6 +23,16 @@
 // console.log(result);
 
 //every-some
-const number = [1, "2", 3, 4];
-const isTrue = number.every((item) => typeof item === "number");
-console.log(isTrue);
+// const number = [1, "2", 3, 4];
+// const isTrue = number.every((item) => typeof item === "number");
+// console.log(isTrue);
+
+let userName = "hadis";
+let id = "10";
+let age = 30;
+let taxtRate = 0.34;
+let isName = true;
+console.log("Hadis Jamali " + userName);
+console.log(age + taxtRate + " units");
+console.log(+id + age);
+console.log(typeof id) ;
