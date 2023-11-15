@@ -27,18 +27,18 @@
 // const isTrue = number.every((item) => typeof item === "number");
 // console.log(isTrue);
 
-let userName = "hadis";
-let id = "10";
-let fav = "music";
-let taxtRate = 0.34;
-let isName = true;
-console.log("Hadis Jamali " + userName);
-console.log(fav + taxtRate + " units");
-console.log(+id + age);
-console.log(typeof id);
+// let userName = "hadis";
+// let id = "10";
+// let fav = "music";
+// let taxtRate = 0.34;
+// let isName = true;
+// console.log("Hadis Jamali " + userName);
+// console.log(fav + taxtRate + " units");
+// console.log(+id + age);
+// console.log(typeof id);
 
-let user1 = ["hadis", "jamali", "reza"];
-user1[user1.length - 1]; //akharin khone
+// let user1 = ["hadis", "jamali", "reza"];
+// user1[user1.length - 1]; //akharin khone
 
 //Age-ify (A future age calculator)
 
@@ -121,8 +121,46 @@ const secondWords = [
   "Asus",
 ];
 
-const randomNumber = Math.floor(Math.random() * 10);
-console.log(randomNumber);
-const startupName = firstWords[randomNumber] + " " + secondWords[randomNumber];
-console.log(startupName);
-console.log(startupName.length);
+// const randomNumber = Math.floor(Math.random() * 10);
+// console.log(randomNumber);
+// const startupName = firstWords[randomNumber] + " " + secondWords[randomNumber];
+// console.log(startupName);
+// console.log(startupName.length);
+
+const name1 = "hadis";
+console.log("my name is ", name1[name1.length - 1]);
+const number = 24 * 55;
+const newNumber = number;
+console.log(newNumber);
+const favorite = ["football", "game", "film", 21, 41, 80, false, true, true];
+console.log(favorite[3]);
+
+const ageMen = 80;
+const priceTicket = 200;
+if (ageMen <= 2) {
+  priceTicket = 0;
+  console.log("you have free ticket");
+} else if (ageMen >= 3 && ageMen <= 18) {
+  console.log("you have 15% discount");
+} else if (ageMen >= 19 && ageMen <= 26) {
+  console.log("you have 10% discount");
+} else if (ageMen >= 60) {
+  console.log("you have 70% discount");
+} else {
+  console.log("you dont have discount");
+}
+
+//Exercise Three
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
+  if (i === 10) {
+    console.log("OMG it started");
+  } else if (i === 0) {
+    console.log("Happy new year");
+  } else {
+    console.log(i);
+  }
+}
+
+//Exercise Three-B
+const friendsList = ["Chris", "Anne", "Colin", "Terri", "Phil", "Lola", "Sam", "Kay", "Bruce"];
