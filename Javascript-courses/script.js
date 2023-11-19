@@ -40,6 +40,16 @@
 // let user1 = ["hadis", "jamali", "reza"];
 // user1[user1.length - 1]; //akharin khone
 
+//Json
+const jsonString = `
+{
+  "firstName":"hadis",
+  "fav": ["game","swiming"]
+}
+`;
+const jsonObject = JSON.parse(jsonString);
+console.log(jsonObject.firstName);
+
 //Age-ify (A future age calculator)
 
 const yearOfBirth = 1995;
@@ -164,3 +174,21 @@ for (let i = 10; i >= 0; i--) {
 
 //Exercise Three-B
 const friendsList = ["Chris", "Anne", "Colin", "Terri", "Phil", "Lola", "Sam", "Kay", "Bruce"];
+
+//practice DOM
+const button = document.querySelector("button");
+
+button.addEventListener("click", showHandler);
+const showHandler = () => {
+  console.log("hi");
+};
+//class week3
+
+function sumNum(num1 = 0, num2 = 0) {
+  if (num1 < 0 || num2 < 0) {
+    return;
+  }
+  return num1 + num2;
+}
+const end = sumNum();
+console.log(end);
