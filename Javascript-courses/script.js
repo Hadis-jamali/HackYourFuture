@@ -264,3 +264,48 @@ class07Students("atefe");
 function getNumberOfStudents() {
   return class07Students.length;
 }
+//Candy helper optional
+const boughtCandyPrices = [];
+
+const amountToSpend = Math.random() * 100;
+
+const candyPriceTable = [
+  {
+    type: "Sweet",
+    price: 0.5,
+  },
+  {
+    type: "Chocolate",
+    price: 0.7,
+  },
+  {
+    type: "Toffee",
+    price: 1.1,
+  },
+  {
+    type: "Chewing-gum",
+    price: 0.03,
+  },
+];
+function addCandy(candyType, weight) {
+  for (let i = 0; i < candyPriceTable.length; i++) {
+    if (candyType === candyPriceTable[i].type) {
+      boughtCandyPrices.push(candyPriceTable[i].price * weight);
+      break;
+    }
+  }
+}
+function canBuyMoreCandy() {
+  let sum = 0;
+  for (let i = 0; i < boughtCandyPrices.length; i++) {
+    sum += boughtCandyPrices[i];
+  }
+  if (amountToSpend > sum) {
+    console.log("You can buy more, so please do!");
+  } else {
+    console.log("sorry!you dont have money,Enough candy for you!");
+  }
+}
+addCandy("Sweet", 20);
+addCandy("Chocolate", 30);
+addCandy("Toffee", 50);
