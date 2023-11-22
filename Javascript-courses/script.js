@@ -309,3 +309,78 @@ function canBuyMoreCandy() {
 addCandy("Sweet", 20);
 addCandy("Chocolate", 30);
 addCandy("Toffee", 50);
+
+//Javascript warmup
+
+const names = ["Peter", "Ahmad", "Yana", "kristina", "Rasmus", "Samuel", "katrine", "Tala"];
+const nameToRemove = "Ahmad";
+
+for (let i = 0; i < names.length; i++) {
+  if (names[i] === nameToRemove) {
+    names.splice(i, 1);
+  }
+}
+console.log(names);
+
+//When will we be there??
+
+const travelInformation = {
+  speed: 50,
+  destinationDistance: 432,
+};
+const travelTime = calculateTravelTime(travelInformation);
+console.log(travelTime);
+
+function calculateTravelTime(travelInformation) {
+  if (travelInformation.destinationDistance <= 0 || travelInformation.speed <= 0) {
+    return "Distance and speed must be more than zero.";
+  }
+
+  const time = travelInformation.destinationDistance / travelInformation.speed;
+  const hours = Math.floor(time);
+  const minutes = Math.floor((time - hours) * 60);
+
+  return `The travel time is ${hours} hours and ${minutes} minutes.`;
+}
+
+//Series duration of my life homework-javascript1-week3
+
+const seriesDurations = [
+  {
+    title: "Game of thrones",
+    days: 3,
+    hours: 1,
+    minutes: 0,
+  },
+  {
+    title: "suits",
+    days: 7,
+    hours: 2,
+    minutes: 0,
+  },
+  {
+    title: "Breaking bad",
+    days: 2,
+    hours: 2,
+    minutes: 0,
+  },
+];
+
+let totalTimeMinutes = 0;
+
+for (const series of seriesDurations) {
+  const { days, hours, minutes } = series;
+  const totalMinutes = days * 24 * 60 + hours * 60 + minutes;
+  totalTimeMinutes += totalMinutes;
+}
+
+const totalMinutesInLifespan = 80 * 365 * 24 * 60;
+
+const percentageOfLifespan = (totalTimeMinutes / totalMinutesInLifespan) * 100;
+
+console.log(`Total time spent watching TV series: ${totalTimeMinutes} minutes`);
+console.log(
+  `Percentage of an 80-year lifespan spent watching TV series: ${percentageOfLifespan.toFixed(2)}%`
+);
+
+logOutSeriesText(); // logs out the text found above
