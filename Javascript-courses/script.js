@@ -12,7 +12,7 @@
 // const newNumbers = numbers.map((number) => number * 2);
 // console.log(newNumbers);
 
-//find & filter (boolean migirn)
+//find & filter (boolean migirn or not)
 // const numbers = [1, 2, 3, 4];
 // const result = numbers.find((number)=>{number===5}) ;
 // console.log(result) ;
@@ -176,12 +176,12 @@ for (let i = 10; i >= 0; i--) {
 const friendsList = ["Chris", "Anne", "Colin", "Terri", "Phil", "Lola", "Sam", "Kay", "Bruce"];
 
 //practice DOM
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-button.addEventListener("click", showHandler);
-const showHandler = () => {
-  console.log("hi");
-};
+// button.addEventListener("click", showHandler);
+// const showHandler = () => {
+//   console.log("hi");
+// };
 //class week3
 
 function sumNum(num1 = 0, num2 = 0) {
@@ -256,10 +256,10 @@ function addStudentToClass(studentName) {
     console.log("can not add more student");
   }
 }
-class07Students("reza");
-class07Students("hadis");
-class07Students("daisy");
-class07Students("atefe");
+// class07Students("reza");
+// class07Students("hadis");
+// class07Students("daisy");
+// class07Students("atefe");
 
 function getNumberOfStudents() {
   return class07Students.length;
@@ -383,4 +383,53 @@ console.log(
   `Percentage of an 80-year lifespan spent watching TV series: ${percentageOfLifespan.toFixed(2)}%`
 );
 
-logOutSeriesText(); // logs out the text found above
+// logOutSeriesText();
+
+//exercise in class
+
+function printNumber(number) {
+  for (let i = 0; i <= number; i++) {
+    const result1 = i % 2 === 0 ? "even" : "odd";
+    console.log(`The number is ${result1}.`);
+  }
+}
+printNumber(20);
+printNumber(5);
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+for (let i = 0; i <= 20; i++) {
+  if (isEven(i)) {
+    console.log(`${i} is even`);
+  } else console.log(`${i} is odd`);
+}
+
+//fibonacci function
+
+function fibonacci(n) {
+  const fibs = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    fibs.push(fibs[i - 1] + fibs[i - 1]);
+  }
+  return fibs[n];
+}
+for (let i = 0; i < 20; i++) {
+  console.log(fib(i));
+}
+//     let num1 = 0;
+//     let num2 = 1;
+//     let sum;
+//     if(){
+
+//     }
+//     for (i = 3; i <= num; i++)
+//     {
+//         sum = num1 + num2;
+//         num1 = num2;
+//         num2 = sum;
+//     }
+//     return num2;
+// }
+// console.log(fibonacci(1));
+// (fibonacci(12));
