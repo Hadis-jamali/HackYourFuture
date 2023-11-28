@@ -415,7 +415,7 @@ function fibonacci(n) {
   return fibs[n];
 }
 for (let i = 0; i < 20; i++) {
-  console.log(fib(i));
+  // console.log(fib(i));
 }
 //     let num1 = 0;
 //     let num2 = 1;
@@ -433,3 +433,41 @@ for (let i = 0; i < 20; i++) {
 // }
 // console.log(fibonacci(1));
 // (fibonacci(12));
+
+function highAndLow(numbers){
+  let number =numbers.split(' ') ;
+  let lowest =parseInt(number[0]);
+  let highest =parseInt(number[0]);
+  for(let i=0 ;i<number.length ;i++){
+    if(parseInt(number[i])>highest){
+      highest =number[i]
+    }
+    if(parseInt(number[i])<lowest){
+      lowest=number[i]
+    }
+  }
+  let result = highest + ' ' + lowest;
+  return result
+}
+highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+
+
+
+function highAndLow2(numbers){
+
+  var numArray = numbers.split(" ");
+  var max      = Number(numArray[0]);
+  var min      = Number(numArray[0]);
+  var num;
+  
+  for(var i = 1; i< numArray.length; i++){
+  
+    num = Number(numArray[i]);
+    
+    if(num > max) max = num;
+    if(num < min) min = num;
+  }
+  
+  return max + " " + min;
+  
+  }
