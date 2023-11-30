@@ -553,3 +553,12 @@ getReply("What day is it today?");
 getReply("What is 3 + 4");
 getReply("What is 3 * 24");
 getReply("Set a timer for 1 minutes");
+
+
+if (command.startsWith("Add") && command.endsWith("to my todo")) {
+  
+  let commandArr = command.split(" ");
+   for (let i = 1; i < commandArr.length - 3; i++) {
+     if (i == commandArr.length - 4)
+   toDo += commandArr[i];
+     else toDo += commandArr[i] + " "; }}
