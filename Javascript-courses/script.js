@@ -50,6 +50,20 @@ const jsonString = `
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonObject.firstName);
 
+//API data ro mifrestim backend  va url hamon api hast
+const url = "link";
+const data = {
+  title: "foo",
+  body: "bar",
+};
+fetch(url, { method: "post", body: json.Stringify(data) ,header :{} })
+  .then((res) => {
+    res.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+
 //Age-ify (A future age calculator)
 
 const yearOfBirth = 1995;
@@ -554,11 +568,10 @@ getReply("What is 3 + 4");
 getReply("What is 3 * 24");
 getReply("Set a timer for 1 minutes");
 
-
 if (command.startsWith("Add") && command.endsWith("to my todo")) {
-  
   let commandArr = command.split(" ");
-   for (let i = 1; i < commandArr.length - 3; i++) {
-     if (i == commandArr.length - 4)
-   toDo += commandArr[i];
-     else toDo += commandArr[i] + " "; }}
+  for (let i = 1; i < commandArr.length - 3; i++) {
+    if (i == commandArr.length - 4) toDo += commandArr[i];
+    else toDo += commandArr[i] + " ";
+  }
+}
