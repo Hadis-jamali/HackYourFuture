@@ -50,13 +50,14 @@ const jsonString = `
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonObject.firstName);
 
-//API data ro mifrestim backend  va url hamon api hast
+//API (in baraye post hastesh, harkodom motefavete)
+// data ro mifrestim backend  va url hamon api hast
 const url = "link";
 const data = {
   title: "foo",
   body: "bar",
 };
-fetch(url, { method: "post", body: json.Stringify(data) ,header :{} })
+fetch(url, { method: "post", body: json.Stringify(data), header: {} })
   .then((res) => {
     res.json();
   })
@@ -575,3 +576,5 @@ if (command.startsWith("Add") && command.endsWith("to my todo")) {
     else toDo += commandArr[i] + " ";
   }
 }
+
+
