@@ -1,3 +1,4 @@
+//class practice
 // const body = document.querySelector("h1");
 // const newEl = document.createElement("h2");
 // newEl.textContent = "hi i am hadis";
@@ -21,4 +22,13 @@ dishes.forEach((food) => {
   ulTag.appendChild(liTag);
 });
 
+const animals = ["dog", "cat", "papi", "bobo", "khoshgele", "hani"];
 
+const input = document.getElementById("input");
+const button = document.getElementById("btn");
+
+function showAnimal() {
+  var animal = animals[Math.floor(Math.random() * animals.length)];
+  alert(input.value + "-" + animal);
+}
+btn.addEventListener("click", showAnimal);
