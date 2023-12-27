@@ -59,3 +59,21 @@ function handlerClick3() {
     console.log("This text was delayed by 3 seconds");
   }, 3000);
 }
+
+//w3 school
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+
+function sum(...args) {
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
+
+let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
