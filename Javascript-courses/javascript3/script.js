@@ -241,3 +241,12 @@
 const interval = setInterval(() => {
   console.log("hello");
 }, 600);
+
+// let blogTitle = 4;
+// let user: typeof blogTitle;
+
+// let blogCount: number = 60;
+// let str: string = `my count is ${blogCount}`;
+// console.log(str);
+// console.log(blogCount * +"5");
+// console.log(blogCount * 5);
