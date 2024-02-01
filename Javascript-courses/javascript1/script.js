@@ -1,4 +1,5 @@
 //forEach
+
 // const numbers = [1, 2, 3, 4];
 // const newNumbers = [];
 
@@ -7,6 +8,7 @@
 // });
 // console.log(newNumbers);
 
+//---------------------------------------------------------
 //map
 // const numbers = [1, 2, 3, 4];
 // const newNumbers = numbers.map((number) => number * 2);
@@ -40,6 +42,7 @@
 // let user1 = ["hadis", "jamali", "reza"];
 // user1[user1.length - 1]; //akharin khone
 
+//--------------------------------------------------------
 //Json
 const jsonString = `
 {
@@ -65,6 +68,7 @@ fetch(url, { method: "post", body: json.Stringify(data), header: {} })
     console.log(data);
   });
 
+//------------------------------------------------------------
 //Age-ify (A future age calculator)
 
 const yearOfBirth = 1995;
@@ -216,6 +220,8 @@ function min(num1, num2) {
   }
 }
 min(-2, 4);
+
+
 //Flight booking fullname function && Formal fullname
 function getFullname(firstname, surname, sex, useFormalName = false) {
   if (useFormalName === true) {
@@ -302,6 +308,7 @@ const candyPriceTable = [
     price: 0.03,
   },
 ];
+
 function addCandy(candyType, weight) {
   for (let i = 0; i < candyPriceTable.length; i++) {
     if (candyType === candyPriceTable[i].type) {
@@ -310,6 +317,7 @@ function addCandy(candyType, weight) {
     }
   }
 }
+
 function canBuyMoreCandy() {
   let sum = 0;
   for (let i = 0; i < boughtCandyPrices.length; i++) {
@@ -324,6 +332,8 @@ function canBuyMoreCandy() {
 addCandy("Sweet", 20);
 addCandy("Chocolate", 30);
 addCandy("Toffee", 50);
+
+
 
 //Javascript warmup
 
@@ -466,6 +476,7 @@ function highAndLow(numbers) {
 }
 highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
 
+
 function highAndLow2(numbers) {
   var numArray = numbers.split(" ");
   var max = Number(numArray[0]);
@@ -481,6 +492,7 @@ function highAndLow2(numbers) {
 
   return max + " " + min;
 }
+
 
 function squareDigits(num) {
   let numString = num.toString();
@@ -558,6 +570,7 @@ function getReply(command) {
     }, Number(minutes) * 60 * 1000);
   }
 }
+
 getReply("Hello my name is Reza");
 getReply("What is my name");
 getReply("Add fishing to my todo");

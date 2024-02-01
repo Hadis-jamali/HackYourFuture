@@ -23,6 +23,7 @@
 // };
 // dispatchButton.addEventListener("click", handleDispatch);
 
+//---------------------------------------------------------------------
 //callback
 
 //function fetchData(callback) {
@@ -39,6 +40,7 @@
 
 //fetchData(processData);
 
+//--------------------------------------------------------------------
 //practice
 // const button1 = document.getElementById("button1");
 // const button2 = document.getElementById("button2");
@@ -146,6 +148,7 @@
 //     });
 // }
 
+//---------------------------------------------------
 //3A Unit test pattern
 // test("AdditionTest", () => {
 //   expect(add(1, 2)).toBe(3);
@@ -192,6 +195,7 @@
 //     console.log(err);
 //   });
 
+//------------------------------------------------------------------
 // const answer = document.getElementById("answer");
 
 // fetch("https://yesno.wtf/api")
@@ -236,6 +240,7 @@
 //   console.log(json);
 // }
 
+//----------------------------------------
 // astronauts();
 
 const interval = setInterval(() => {
@@ -251,6 +256,7 @@ const interval = setInterval(() => {
 // console.log(blogCount * +"5");
 // console.log(blogCount * 5);
 
+//------------------------------------
 const question = "question text";
 const answers = [1, 2, 3, 4];
 const correctAnswer = 2;
@@ -260,7 +266,7 @@ function showQuestion() {
 function checkAnswer() {
   console.log("show the answer", answers[2]);
 }
-
+//----------------------------------------------------------------
 //object oriented programing (oop)
 const quiz = {
   question: "question text",
@@ -285,9 +291,24 @@ function Quiz(question, answers, correctAnswer) {
   this.checkAnswer = function () {
     console.log(this.question);
   };
-  this.showQuestion = function () {
-    console.log("show the answer", this.correctAnswer);
-  };
 }
 const quiz1 = new Quiz("question text1", [1, 2, 3, 4], 2);
 const quiz2 = new Quiz("question text2", [5, 6, 7, 8], 7);
+
+//prototype
+Quiz.prototype.showQuestion = function () {
+  console.log("show the answer", this.correctAnswer);
+};
+
+//classes
+class QuizApp {
+  constructor(question, answers, correctAnswer) {
+    this.question = question;
+    this.answer = answers;
+    this.checkAnswer = correctAnswer;
+  }
+  showQuestion() {
+    console.log(this.question);
+  }
+}
+const quiz3 = new Quiz("question text1", [1, 2, 3, 4], 2);

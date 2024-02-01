@@ -40,7 +40,7 @@ btn.addEventListener("click", showAnimal);
 
 /**
  * Get random integer between two numbers, found here: https://stackoverflow.com/a/7228322
- * @param {integer} min - The min number
+ *  @param {integer} min - The min number
  * @param {integer} max - The max number
  * @returns {Number} Random number between min and max
  */
@@ -53,6 +53,12 @@ function randomIntFromInterval(min, max) {
  * @param {integer} numberOfListings - The number of listings
  * @returns {array} Array containing the listing objects
  */
+
+
+
+
+
+
 function generateListings(numberOfListings) {
   const listings = [];
 
