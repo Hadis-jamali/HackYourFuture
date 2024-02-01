@@ -250,3 +250,44 @@ const interval = setInterval(() => {
 // console.log(str);
 // console.log(blogCount * +"5");
 // console.log(blogCount * 5);
+
+const question = "question text";
+const answers = [1, 2, 3, 4];
+const correctAnswer = 2;
+function showQuestion() {
+  console.log(question);
+}
+function checkAnswer() {
+  console.log("show the answer", answers[2]);
+}
+
+//object oriented programing (oop)
+const quiz = {
+  question: "question text",
+  answers: [1, 2, 3, 4],
+  correctAnswer: 2,
+  showQuestion() {
+    console.log(this.question);
+  },
+  checkAnswer() {
+    console.log("show the answer", this.answers[2]);
+  },
+};
+quiz.showQuestion();
+quiz.checkAnswer();
+
+//constructor function
+
+function Quiz(question, answers, correctAnswer) {
+  this.question = question;
+  this.answers = answers;
+  this.correctAnswer = correctAnswer;
+  this.checkAnswer = function () {
+    console.log(this.question);
+  };
+  this.showQuestion = function () {
+    console.log("show the answer", this.correctAnswer);
+  };
+}
+const quiz1 = new Quiz("question text1", [1, 2, 3, 4], 2);
+const quiz2 = new Quiz("question text2", [5, 6, 7, 8], 7);
