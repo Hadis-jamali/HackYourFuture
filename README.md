@@ -1,3 +1,3 @@
 
 
-My hack your future home work and our practice in class
+My HackYourFuture home work and my practice in class and my home
