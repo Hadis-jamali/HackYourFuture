@@ -258,3 +258,20 @@ WHERE id = 1
 
 DELETE from meal
 WHERE id = 1
+
+----------------------------------------- Review
+
+SELECT * FROM review;
+
+INSERT INTO review (title, description, meal_id, stars, create_date)
+VALUES ('pizaa', 'food was good',2, 3, '2024-02-12');
+
+SELECT * FROM review
+WHERE id = 1
+
+UPDATE review
+SET description = 'food was very bad'
+WHERE id = 1
+
+DELETE from review
+WHERE id = 1
