@@ -1,4 +1,9 @@
 function welcome(name) {
-  console.log("hello" + name);
+  return "hello" + name;
 }
-welcome("hadis");
+
+function sum(a, b) {
+  return a + b;
+}
+export { welcome,sum };
+//  {sum,other function)
