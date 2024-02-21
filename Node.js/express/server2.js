@@ -5,6 +5,7 @@ const app = express();
 app.get("/meals", (req, res) => {
   res.json(meals);
 });
+
 app.get("/runMeal", (req, res) => {
   const meal = meals[Math.floor(Math.random() * meals.length)];
   res.json(meal);
