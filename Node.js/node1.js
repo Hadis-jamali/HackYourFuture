@@ -1,3 +1,4 @@
+import { get } from "http";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
@@ -28,3 +29,24 @@ const minimistAverage = sum / values.length;
 
 console.log("Input values:", values);
 console.log("Average:", minimistAverage);
+
+// use axios library
+const getReq = async () => {
+  const res = await axios.get("link");
+  console.log(res);
+};
+getReq();
+
+//fetch //get= gereftan data    post=ferestadan data
+const url = "";
+fetch(url, { method: "Get" })
+  .then((response) => response.json())
+  .then();
+
+fetch(url, {
+  method: "Post",
+  body: JSON.stringify({
+    title: "foo",
+  }),
+  header: {},
+}).then();
