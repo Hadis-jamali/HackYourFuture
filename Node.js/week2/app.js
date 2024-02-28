@@ -24,7 +24,7 @@ app.get("/search", (req, res) => {
   }
 });
 
-//GET /documents/:id
+//GET /search/:id
 
 app.get("/search/:id", (req, res) => {
   const documentId = +req.params.id;
