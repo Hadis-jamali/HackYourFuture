@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import UserList from "./UserList";
+import TaskInput from "./TaskInput";
 
 const App = () => {
   const users = [
@@ -31,6 +32,7 @@ const App = () => {
     <div>
       <h1>Users</h1>
       <UserList users={users} />
+      <TaskInput />
     </div>
   );
 };
