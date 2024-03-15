@@ -31,6 +31,9 @@ function TaskInput() {
         <button type="submit">Add</button>
       </form>
       
+      {toDoList.map((todo) => (
+        <div className="newTodo">{todo.text}</div>
+      ))}
     </div>
   );
 }
