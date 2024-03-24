@@ -1,41 +1,41 @@
-import React, { useState } from "react";
-import "../index.css";
+// import React, { useState } from "react";
+//  import "../index.css";
 
-function TaskInput() {
-  const [toDoList, setToDoList] = useState([]);
-  const [todo, setTodo] = useState("");
+// function TaskInput() {
+//   const [toDoList, setToDoList] = useState([]);
+//   const [todo, setTodo] = useState("");
 
-  console.log(todo);
+//   console.log(todo);
 
-  function handleSubmit(e) {
-    e.preventDefault();
+//   function handleSubmit(e) {
+//     e.preventDefault();
 
-    const newTodo = {
-      id: new Date().getTime(),
-      text: todo,
-      completed: false,
-    };
-    setToDoList([...toDoList].concat(newTodo));
-    setTodo("");
-  }
+//     const newTodo = {
+//       id: new Date().getTime(),
+//       text: todo,
+//       completed: false,
+//     };
+//     setToDoList([...toDoList].concat(newTodo));
+//     setTodo("");
+//   }
 
-  return (
-    <div className="App">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Add Item.."
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
-        />
-        <button type="submit">Add</button>
-      </form>
+//   return (
+//     <div className="App">
+//       <form onSubmit={handleSubmit}>
+//         <input
+//           type="text"
+//           placeholder="Add Item.."
+//           onChange={(e) => setTodo(e.target.value)}
+//           value={todo}
+//         />
+//         <button type="submit">Add</button>
+//       </form>
       
-      {toDoList.map((todo) => (
-        <div className="newTodo">{todo.text}</div>
-      ))}
-    </div>
-  );
-}
+//       {toDoList.map((todo) => (
+//         <div className="newTodo">{todo.text}</div>
+//       ))}
+//     </div>
+//   );
+// }
 
-export default TaskInput;
+// export default TaskInput;
