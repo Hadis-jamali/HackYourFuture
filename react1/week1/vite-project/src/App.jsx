@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import UserList from "./UserList";
-
+import FormExercise from "./FormExercise";
 import CallbackExercise from "./CallbackExercise";
 
 const App = () => {
@@ -35,6 +35,7 @@ const App = () => {
       {/* <UserList users={users} />
       <TaskInput /> */}
       <CallbackExercise />
+      <FormExercise/>
     </div>
   );
 };
