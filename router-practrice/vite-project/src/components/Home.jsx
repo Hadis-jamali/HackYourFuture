@@ -4,6 +4,7 @@ function Home() {
   return (
     <div>
       <button>Home</button>
+      <p>contact us</p>
     </div>
   )
 }
